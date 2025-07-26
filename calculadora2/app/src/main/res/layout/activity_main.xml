@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/large_margin"/>
+
+        <!-- Monto Total -->
+        <TextView
+            android:id="@+id/tvMontoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/monto_total"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/label_text_size"/>
+
+        <EditText
+            android:id="@+id/etMontoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/hint_monto_total"
+            android:textSize="@dimen/input_text_size"
+            android:layout_marginBottom="@dimen/default_margin"/>
+
+        <TextView
+            android:id="@+id/tvNumPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_personas"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/label_text_size"/>
+
+        <EditText
+            android:id="@+id/etNumPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/hint_numero_personas"
+            android:textSize="@dimen/input_text_size"
+            android:layout_marginBottom="@dimen/default_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/propina"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/label_text_size"
+            android:layout_marginBottom="@dimen/small_margin"/>
+
+        <RadioGroup
+            android:id="@+id/rgPropina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/default_margin">
+
+            <RadioButton
+                android:id="@+id/rb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/propina_10"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rb15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/propina_15"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rb20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/propina_20"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rbOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/propina_otro"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etPropinaPersonalizada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/hint_propina_personalizada"
+            android:textSize="@dimen/input_text_size"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/default_margin"/>
+
+        <Switch
+            android:id="@+id/swIncluirIVA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/incluir_iva"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/label_text_size"
+            android:layout_marginBottom="@dimen/large_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/large_margin">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/calcular"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginEnd="@dimen/small_margin"/>
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/limpiar"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="@dimen/small_margin"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/result_text_size"
+            android:lineSpacingExtra="@dimen/line_spacing"/>
+    </LinearLayout>
+</ScrollView>

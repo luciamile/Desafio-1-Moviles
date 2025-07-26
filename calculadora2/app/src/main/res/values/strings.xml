@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Calculadora de Propinas</string>
+    <string name="app_title">Calculadora de Propinas para grupos tacaños</string>
+
+    <!-- Labels -->
+    <string name="monto_total">Monto Total</string>
+    <string name="numero_personas">Número de Personas</string>
+    <string name="propina">Propina</string>
+    <string name="incluir_iva">Incluir IVA (16%)</string>
+
+    <!-- Hint -->
+    <string name="hint_monto_total">Ingrese el monto total</string>
+    <string name="hint_numero_personas">Ingrese número de personas</string>
+    <string name="hint_propina_personalizada">% propina</string>
+
+    <!-- Radio buttons -->
+    <string name="propina_10">10%</string>
+    <string name="propina_15">15%</string>
+    <string name="propina_20">20%</string>
+    <string name="propina_otro">Otro</string>
+
+    <!-- Buttons -->
+    <string name="calcular">Calcular</string>
+    <string name="limpiar">Limpiar</string>
+
+    <!-- Results -->
+    <string name="resultado_propina">Propina Total</string>
+    <string name="resultado_iva">IVA</string>
+    <string name="resultado_total">Total a Pagar</string>
+    <string name="resultado_por_persona">Importe por Persona</string>
+
+    <!-- Errors -->
+    <string name="error_monto_vacio">Ingrese un monto</string>
+    <string name="error_monto_invalido">Monto debe ser mayor a 0</string>
+    <string name="error_personas_vacio">Ingrese número de personas</string>
+    <string name="error_personas_invalido">Debe haber al menos 1 persona</string>
+    <string name="error_propina_vacia">Ingrese porcentaje de propina</string>
+    <string name="error_propina_invalida">Propina no puede ser negativa</string>
+</resources>
